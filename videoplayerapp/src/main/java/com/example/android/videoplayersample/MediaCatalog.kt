@@ -23,8 +23,8 @@ import android.support.v4.media.MediaDescriptionCompat
  * Manages a set of media metadata that is used to create a playlist for [VideoActivity].
  */
 
-open class MediaCatalog(private val list: MutableList<MediaDescriptionCompat>) :
-        List<MediaDescriptionCompat> by list {
+open class MediaCatalog(
+        private val list: MutableList<MediaDescriptionCompat>) : List<MediaDescriptionCompat> by list {
 
     companion object : MediaCatalog(mutableListOf())
 

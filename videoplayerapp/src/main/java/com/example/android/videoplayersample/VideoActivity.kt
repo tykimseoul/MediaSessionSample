@@ -135,8 +135,7 @@ class VideoActivity : AppCompatActivity(), AnkoLogger {
         }
     }
 
-    override fun onPictureInPictureModeChanged(isInPictureInPictureMode: Boolean,
-                                               newConfig: Configuration?) {
+    override fun onPictureInPictureModeChanged(isInPictureInPictureMode: Boolean, newConfig: Configuration?) {
         exoplayerview_activity_video.useController = !isInPictureInPictureMode
     }
 
